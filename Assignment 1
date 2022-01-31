@@ -1,0 +1,31 @@
+#include<studio.h>
+int binary(int arr[],int x,int low, int high)
+{
+while (low<=high)
+{
+int mid=low+(high-low)/2;
+if (arr[mid]==x)
+return mid;
+if(arr[mid]<x)
+Low=mid+1;
+else
+high=mid-1;
+}
+return-1;
+}
+int main(void)
+{
+int arr[]={};
+int n = sizeof(arr[0])
+int x=4;
+int result=binary(arr,x,0,n-1);
+if (result==1)
+printf("not found");
+else
+Printr("element is found at index%d", result);
+return 0;
+}
+
+
+
+
